@@ -1,3 +1,15 @@
+"""
+Glassdoor Web Scraper
+
+Created on 5th October 2021
+
+Author Details:
+               Name            -  Jaspreet Singh
+               Github Username -  Jaspreet1711
+               Email ID        -  singhjaspreet1711@outlook.com
+
+"""
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
