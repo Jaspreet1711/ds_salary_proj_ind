@@ -36,6 +36,8 @@ class bcolors:
     
 ignored_exceptions=(NoSuchElementException,StaleElementReferenceException)
 
+##############################################################################################################################################################
+
 def glassdoor_pg5():
     
     print(bcolors.BOLD + "This function will fetch details from Glassdoor Website uptill 5 pages of various openings of any role or job title within a location given by you.")
