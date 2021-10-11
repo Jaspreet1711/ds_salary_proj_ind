@@ -1,7 +1,7 @@
 # Data Science Salary Predcition Project
 
 
-# Data Collection
+## Data Collection
 
 <p>I collected data using Webscraper from Glassdoor Website. I have extracted all the details of Data Science jobs from various cities and states across USA (Check folder "Data Collected Using Glassdoor_Scraper" in the same repository). I consolidated all the outputs into one Excel file mentioned below.</p> 
         
