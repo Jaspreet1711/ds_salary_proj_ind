@@ -26,7 +26,7 @@ Source - [Glassdoor Website](https://www.glassdoor.com/Job/index.htm)
        - Change path in Glassdoor_Scraper_V2.py (Line 80) to your system's path where you have saved Chromedriver.exe      
   4. Excel file will be downloaded in your system where you have saved Glassdoor_Scraper_V2.py or .ipynb .
   5. Take a look at Jupyter Notebook in the reposotory name "Data Collection using - Glassdoor_Scraper.ipynb" for your reference on how to use this Web Scraper.     
-  6. Check the Inputs we need to give while running this Web Scraper in Python and Output(Details) we will get.
+  6. Check the Inputs we need to give while running this Web Scraper in Python and Output(Details) we will get after code runs successfully.
        |              INPUTS                |     OUTPUTS    |     
        | :--------------------------------- |:-------------- |
        | Job Title                          | Company Name   | 
