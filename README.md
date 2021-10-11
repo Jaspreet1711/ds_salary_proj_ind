@@ -21,7 +21,7 @@ Source - [Glassdoor Website](https://www.glassdoor.com/Job/index.htm)
            -  selenium
            -  pandas 
            -  time
-       - Copy Paste all the codes in Glassdoor_Scraper_V2.py in any python ide (Like Spyder, Jupyter Notebook) and save it as .py or .ipynb file in your system.
+       - Copy & Paste all the codes in Glassdoor_Scraper_V2.py in any python ide (Like Spyder, Jupyter Notebook) and save it as .py or .ipynb file in your system.
        - Chromedriver.exe should be installed in your system to run this code. [Click here](https://chromedriver.chromium.org/downloads) to install. Please ignore if you already have.
        - Change path in Glassdoor_Scraper_V2.py (Line 80) to your system's path where you have saved Chromedriver.exe      
   4. Excel file will be downloaded in your system where you have saved Glassdoor_Scraper_V2.py or .ipynb .
