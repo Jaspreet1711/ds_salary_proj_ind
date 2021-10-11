@@ -26,23 +26,22 @@ Source - [Glassdoor Website](https://www.glassdoor.com/Job/index.htm)
        - Change path in Glassdoor_Scraper_V2.py (Line 80) to your system's path where you have saved Chromedriver.exe      
   4. Excel file will be downloaded in your system where you have saved Glassdoor_Scraper_V2.py or .ipynb .
   5. Take a look at Jupyter Notebook in the reposotory name "Data Collection using - Glassdoor_Scraper.ipynb" for your reference on how to use this Web Scraper.     
-  
-   |              INPUTS                |     OUTPUTS    |     
-   | :--------------------------------- |:-------------- |
-   | Job Title                          | Company Name   | 
-   | Location                           | Job Title      |
-   | Number of Pages you want to scrape | City           |
-   | Full Page Upload Speed in Seconds  | Salary         |
-   | Output File Name (Excel)           | Company Rating |
-   |                                    | Job Post Age   |
-   |                                    | Job Description|
-   |                                    | Company Size   |
-   |                                    | Co Founded in  |
-   |                                    | Company Type   |
-   |                                    | Industry       |
-   |                                    | Sector         |
-   |                                    | Revenue Earned |
-   |                                    | Website        |
+  6.   |              INPUTS                |     OUTPUTS    |     
+       | :--------------------------------- |:-------------- |
+       | Job Title                          | Company Name   | 
+       | Location                           | Job Title      |
+       | Number of Pages you want to scrape | City           |
+       | Full Page Upload Speed in Seconds  | Salary         |
+       | Output File Name (Excel)           | Company Rating |
+       |                                    | Job Post Age   |
+       |                                    | Job Description|
+       |                                    | Company Size   |
+       |                                    | Co Founded in  |
+       |                                    | Company Type   |
+       |                                    | Industry       |
+       |                                    | Sector         |
+       |                                    | Revenue Earned |
+       |                                    | Website        |
 
   <em>OUTPUTS mentioned above are columns in Excel File that you will get as an Output using the Glassdoor_Scraper_V2.py</em>
 
