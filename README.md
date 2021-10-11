@@ -13,28 +13,26 @@ Source - [Glassdoor Website](www.glassdoor.com)
  
   ### GLassdoor Webscraper
   
-  - I created this Web Scraper Glassdoor_Scraper_V2.py using Selenium Library in python to extract Data from Glassdoor Website about Jobs and Salary.
-  - It collected the data and gave output in Excel Format.
-  - Excel file will be downloaded in your system where you have saved Glassdoor_Scraper_V2.py
+  1. I created this Web Scraper Glassdoor_Scraper_V2.py using Selenium Library in python to extract Data from Glassdoor Website about Jobs and Salary.
+  2. It collected the data and gave output in Excel Format.
+  3. Requirements to use Glassdoor_Scraper_V2:
+      - Python Environment in your system (Anaconda)
+      - Libraries used are - selenium, pandas & time
+      - Chromedriver.exe should be installed in your system to use this code. [Click here](https://chromedriver.chromium.org/downloads) to install. Please ignore if you already have.
+      - Change path in Glassdoor_Scraper_V2.py (Line 80) to your system's path where you have saved Chromedriver.exe      
+  4. Excel file will be downloaded in your system where you have saved Glassdoor_Scraper_V2.py
  
- 
-  Requirements to use Glassdoor_Scraper_V2:
-  - Python Environment in your system (Anaconda)
-  - Libraries used are - selenium, pandas & time
-  - Chromedriver.exe should be installed in your system to use this code. [Click here](https://chromedriver.chromium.org/downloads) to install. Please ignore if you already have.
-  - Change path in Glassdoor_Scraper_V2.py (Line 80) to your system's path where you have saved Chromedriver.exe      
- 
-  ----------------------------------------------------------------      
-        Glassdoor_Scraper_V2.py
+       
+         Glassdoor_Scraper_V2.py
 
-        Created on 7th October 2021
+         Created on 7th October 2021
 
-        Author Details:
+         Author Details:
                
               Name            -  Jaspreet Singh
               Github Username -  Jaspreet1711
               Email ID        -  singhjaspreet1711@outlook.com
-  -----------------------------------------------------------------  
+    
   
    |              INPUTS                |     OUTPUTS    |     
    | :--------------------------------- |:-------------- |
@@ -52,3 +50,5 @@ Source - [Glassdoor Website](www.glassdoor.com)
    |                                    | Sector         |
    |                                    | Revenue Earned |
    |                                    | Website        |
+
+----------------------------------------------------------------------------
