@@ -24,19 +24,19 @@
                Github Username -  Jaspreet1711
                Email ID        -  singhjaspreet1711@outlook.com
         
-        | Input                              | Output         |     
-        | ---------------------------------- |--------------- |
-        | Job Title                          | Company Name   | 
-        | Location                           | Job Title      |
-        | Number of Pages you want to scrape | City           |
-        | Full Page Upload Speed in Seconds  | Salary         |
-        | Output File Name (Excel)           | Company Rating |
-        |                                    | Job Post Age   |
-        |                                    | Job Description|
-        |                                    | Company Size   |
-        |                                    | Co Founded in  |
-        |                                    | Company Type   |
-        |                                    | Industry       |
-        |                                    | Sector         |
-        |                                    | Revenue Earned |
-        |                                    | Website        |
+      | Input                              | Output         |     
+      | ---------------------------------- |--------------- |
+      | Job Title                          | Company Name   | 
+      | Location                           | Job Title      |
+      | Number of Pages you want to scrape | City           |
+      | Full Page Upload Speed in Seconds  | Salary         |
+      | Output File Name (Excel)           | Company Rating |
+      |                                    | Job Post Age   |
+      |                                    | Job Description|
+      |                                    | Company Size   |
+      |                                    | Co Founded in  |
+      |                                    | Company Type   |
+      |                                    | Industry       |
+      |                                    | Sector         |
+      |                                    | Revenue Earned |
+      |                                    | Website        |
