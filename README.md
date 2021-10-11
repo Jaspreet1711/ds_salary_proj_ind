@@ -31,19 +31,19 @@
               Email ID        -  singhjaspreet1711@outlook.com
   -----------------------------------------------------------------  
   
-      |              INPUTS                |     OUTPUTS    |     
-      | :--------------------------------- |:-------------- |
-      | Job Title                          | Company Name   | 
-      | Location                           | Job Title      |
-      | Number of Pages you want to scrape | City           |
-      | Full Page Upload Speed in Seconds  | Salary         |
-      | Output File Name (Excel)           | Company Rating |
-      |                                    | Job Post Age   |
-      |                                    | Job Description|
-      |                                    | Company Size   |
-      |                                    | Co Founded in  |
-      |                                    | Company Type   |
-      |                                    | Industry       |
-      |                                    | Sector         |
-      |                                    | Revenue Earned |
-      |                                    | Website        |
+   |              INPUTS                |     OUTPUTS    |     
+   | :--------------------------------- |:-------------- |
+   | Job Title                          | Company Name   | 
+   | Location                           | Job Title      |
+   | Number of Pages you want to scrape | City           |
+   | Full Page Upload Speed in Seconds  | Salary         |
+   | Output File Name (Excel)           | Company Rating |
+   |                                    | Job Post Age   |
+   |                                    | Job Description|
+   |                                    | Company Size   |
+   |                                    | Co Founded in  |
+   |                                    | Company Type   |
+   |                                    | Industry       |
+   |                                    | Sector         |
+   |                                    | Revenue Earned |
+   |                                    | Website        |
