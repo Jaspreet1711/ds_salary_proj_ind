@@ -5,7 +5,7 @@
   
   ### Data
   
-  I collected data using Webscraper from Glassdoor Website. I have extracted all the details of Data Science jobs from various cities and states across USA (Check folder "Data Collected USA"). I consolidated all the outputs into one Excel file mentioned below. 
+  <p>I collected data using Webscraper from Glassdoor Website. I have extracted all the details of Data Science jobs from various cities and states across USA (Check folder "Data Collected USA"). I consolidated all the outputs into one Excel file mentioned below.</p> 
         
   File Name -  DS Jobs in USA (Consolidated).xlsx
   
