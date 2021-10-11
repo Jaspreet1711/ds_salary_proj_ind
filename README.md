@@ -13,8 +13,7 @@
   - I created this Web Scraper Glassdoor_Scraper_V2.py using Selenium Library in python to extract Data from Glassdoor Website about Jobs and Salary.
   - It collected the data and gave output in Excel Format.
   - Excel file will be downloaded in your system where you have saved Glassdoor_Scraper_V2.py
- 
-  ---------------------------------------------------------------
+ ---------------------------------------------------------------
   Requirements to use Glassdoor_Scraper_V2:
   - Python Environment in your system (Anaconda)
   - Libraries used are - selenium, pandas & time
@@ -47,3 +46,5 @@
       |                                    | Sector         |
       |                                    | Revenue Earned |
       |                                    | Website        |
+  -------------------------------------------------------------------
+  
