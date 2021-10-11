@@ -42,4 +42,6 @@ Source - [Glassdoor Website](www.glassdoor.com)
    |                                    | Revenue Earned |
    |                                    | Website        |
 
+  <em>OUTPUTS mentioned above are columns in Excel File that you will get as an Output using the Glassdoor_Scraper_V2.py</em>
+
 ----------------------------------------------------------------------------
