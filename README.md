@@ -1,17 +1,31 @@
-# ds_sal_proj
+# Data Science Salary Predcition Project
 
-# Glassdoor_Scraper.py
-"""
-Glassdoor Web Scraper
+# Data Collection
+  
+  GLassdoor Webscraper
+  - I created this Web Scraper Glassdoor_Scraper_V2.py using Selenium Library in python to extract Data from Glassdoor Website about Jobs and Salary.
+  - It will collect data and will give output in Excel Format.
+  - Excel file will be downloaded in your system where you have saved Glassdoor_Scraper_V2.py
+  
+  Requirements to use Glassdoor_Scraper_V2:
+  - Python Environment in your system (Anaconda)
+  - pip install selenium
+  - Chromedriver.exe should be installed in your system to use this code.
+  - Change path in Glassdoor_Scraper_V2.py (Line 80) to your system's path where you have saved Chromedriver.exe      
+        
+        Glassdoor_Scraper_V2.py
 
-Created on 5th October 2021
+        Created on 7th October 2021
 
-Author Details:
+       
+        Author Details:
                
                Name            -  Jaspreet Singh
-               
                Github Username -  Jaspreet1711
-               
                Email ID        -  singhjaspreet1711@outlook.com
 
-"""
+        Input:  
+               1. Job Title
+               2. Location
+               3. Number of Pages you want to scrape
+               4. Output File Name (Excel)
