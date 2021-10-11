@@ -8,6 +8,9 @@ Author Details:
                Github Username -  Jaspreet1711
                Email ID        -  singhjaspreet1711@outlook.com
 
+Change Path in line 80 according to your system path where chromedriver.exe is saved
+Download Chromerdriver.exe from 
+https://chromedriver.chromium.org/downloads
 """
 
 from selenium import webdriver
@@ -37,6 +40,7 @@ ignored_exceptions=(NoSuchElementException,StaleElementReferenceException)
 
 def gl_scrap():
     
+    # Details and Info of Scraping
     print(bcolors.BOLD + "This function will fetch details from Glassdoor Website uptill pages given by you of various openings of any role or job title within a location given by you.")
     print("Details will be fetched in excel format.")
     print(" ")
@@ -44,10 +48,13 @@ def gl_scrap():
     print("You will be required to download chromedriver.exe from the link mentioned below: ")
     print("https://chromedriver.chromium.org/downloads")
     print("Copy & paste the downloaded chromedriver.exe in the same folder where you have saved this Glassdoor_Scraper.py file")
-    print(bcolors.WARNING + "Change the Path (in code line 69 in Glassdoor_Scraper.py) to your system path where you have saved the chromediver.exe")
+    print(bcolors.WARNING + "Change the Path (in code line 80 in Glassdoor_Scraper.py) to your system path where you have saved the chromediver.exe")
     print(bcolors.OKGREEN + "Your output excel will be saved in same folder.")
     print(" ")
     
+    time.sleep(1)
+    
+    # Inputs for Scraping
     Job_or_Role = str(input("Enter the Job_title or Role: "))
     Location = str(input("Enter the location: "))
     Pgs = int(input("Enter num of pages you want to scrape: "))
@@ -58,21 +65,26 @@ def gl_scrap():
     print("If you have fast Internet 2 Seconds are appropriate")
     Secs = int(input("Enter Second(s) for page load time: "))
     Output_DF_Name = str(input("Enter the Output file name you want to save: "))
+    
     print(" ")
     print(" ")
+    
+    # Calculating approx time for Scraping and collecting data in excel format
     minutes = str(round((((((Secs/1.5)*30)*Pgs) + (Secs*4))/60) + 3)) 
     print(bcolors.WARNING + "It will take approximately "+minutes+" mins to scrape through 5 pages with all details into dataframe" )
     print(" ")
     print(" ")
     
+    #Scraping Starts after taking all the Inputs (Remember to change path below according to your system)
     print(bcolors.OKGREEN + "Opening_the_Glassdoor_Website_in_ChromeBrowser")
-    path = 'C:/Users/Jaspreet Singh/Desktop/DS_Projects/ds_sal_proj_backup/chromedriver.exe'
+    path = 'C:/Users/Jaspreet Singh/Desktop/DS_Projects/ds_sal_proj_backup/chromedriver.exe' # CHANGE THIS PATH 
     driver = webdriver.Chrome(path) # selecting the browser to be opened
     driver.get("https://www.glassdoor.com/blog/tag/job-search/") # selecting the website
     print(bcolors.OKBLUE + driver.title)   # getting the title in web page
 
     time.sleep(1)
 
+    # Searching Job Title or Role 
     print(bcolors.OKGREEN + "Searching_for_Job_Entered_by_you")
     try:
         search_job = driver.find_element_by_id("sc.keyword")
@@ -84,6 +96,7 @@ def gl_scrap():
         time.sleep(Secs)
         driver.close()
     
+    # Searching Location
     time.sleep(Secs)
     print(bcolors.OKGREEN + "It_will_search_Jobs_on_location_entered")
     try:
@@ -107,7 +120,9 @@ def gl_scrap():
     
     print(" ")
     print(" ")
-    print(bcolors.BOLD + "Finding_Page_Numbers_Elements_on_WebPage")
+    
+    #Looking for Left and Right Arrow to Navigate through Pages.
+    print(bcolors.BOLD + "Finding_Page_Number_Change_Elements_on_WebPage")
     print(bcolors.OKGREEN + "It_Will_first_Let_Login-Pop-up_Trigger_and_Close_it_for_smooth_Scraping_ahead")
     
     left_arrow = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
@@ -116,6 +131,8 @@ def gl_scrap():
     right_arrow = WebDriverWait(driver, 10, ignored_exceptions=ignored_exceptions).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, "a[data-test='pagination-next']"))
         ) 
+    
+    # Closing the login Pop Up before collecting the Data. It will change the page to trigger the pop up and close it.
     try:            
         right_arrow.click()
         print(bcolors.OKGREEN + "Waiting_for_Login_Pop-up")
@@ -133,6 +150,7 @@ def gl_scrap():
         time.sleep(4)
         driver.close()
     
+    # Page Numbers requested (Input) can be more than Total Pages Available for that Job in given Location. It can give error to avoid that we will first check and rectify it. 
     Pages_Tray = driver.find_element_by_css_selector("div[data-test='page-x-of-y']").text.split(" ")
     Available_Pgs = int(Pages_Tray[3])
     Extra_Pgs = Pgs - Available_Pgs
@@ -146,12 +164,15 @@ def gl_scrap():
     else:
         pass
 
+    print(" ")
+    print(" ")
+
 ########################################################################################################################################################
     
-    print(" ")
-    print(" ")
+    #Data Collection will start from Page 1
     print(bcolors.OKBLUE + "Now_Scraping_will_start_from_page-1_till_page-"+str(Pgs))    
     
+    #Variables to be collected of the job (Basically these are all columns in output Excel it will get)
     company_name = []
     designation = []
     city = []
@@ -167,7 +188,7 @@ def gl_scrap():
     sector = []
     revenue = []
     
-    #Page-1
+    #Starts from Page-1 
     left_arrow.click()
     time.sleep(Secs)
     print(" ")
@@ -267,7 +288,7 @@ def gl_scrap():
     except:
         print(bcolors.FAIL + "Failed_to_retrieve_Details_from_page-1")
     
-    #Will Start Clicking on each job to get data out of it.
+    #It will Start Clicking on each job to get data out of it.
     print(bcolors.OKCYAN + "Getting_JobDescription_on_page-1_Wait_for_Few_More_Seconds")
         
     for opening in jobs_list:
@@ -317,6 +338,8 @@ def gl_scrap():
 
     page_num = 1    
 
+    # Now, it will collect from rest of the pages using Loop Function. Page Numbers to scrape requested (Input) are placed in end limit of Range mentioned below
+    # As page-1 doesn't require Right Click we cannot place page-1 in loop.
     for i in range(1,Pgs):
         right_arrow.click()
         time.sleep(Secs)
