@@ -24,7 +24,7 @@
                Github Username -  Jaspreet1711
                Email ID        -  singhjaspreet1711@outlook.com
         
-      | ## Input                           | ## Output      |     
+      |## Input                            |## Output       |     
       | ---------------------------------- |--------------- |
       | Job Title                          | Company Name   | 
       | Location                           | Job Title      |
