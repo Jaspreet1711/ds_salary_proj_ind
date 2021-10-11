@@ -11,7 +11,7 @@ Source - [Glassdoor Website](www.glassdoor.com)
   
  --------------------------------------------------------------- 
  
-  ### GLassdoor Webscraper
+  #### GLassdoor Webscraper
   
   1. I created this Web Scraper <strong>Glassdoor_Scraper_V2.py</strong> using Selenium Library in python to extract Data from Glassdoor Website about Jobs and Salary.
   2. It collects the data and give output in Excel Format.
