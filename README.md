@@ -23,27 +23,20 @@
                Name            -  Jaspreet Singh
                Github Username -  Jaspreet1711
                Email ID        -  singhjaspreet1711@outlook.com
-
-        Input:  
-               1. Job Title
-               2. Location
-               3. Number of Pages you want to scrape
-               4. Full Page Upload Speed in Seconds
-               5. Output File Name (Excel)
-               
-        Output:
-        All of these are columns in Excel Output
-               1. company_name
-               2. Job Title
-               3. City 
-               4. Salary 
-               5. Company Rating 
-               6. Job Post Age
-               7. Job Description
-               8. Company Size 
-               9. Co Founded in 
-               10. Company Type 
-               11. Industry 
-               12. Sector
-               13. Revenue Earned
-               14. Website 
+        
+        | Input                              | Output         |     All of these are columns in Excel Output 
+        | :---                               |    :----:      |
+        | Job Title                          | Company Name   | 
+        | Location                           | Job Title      |
+        | Number of Pages you want to scrape | City           |
+        | Full Page Upload Speed in Seconds  | Salary         |
+        | Output File Name (Excel)           | Company Rating |
+        |                                    | Job Post Age   |
+        |                                    | Job Description|
+        |                                    | Company Size   |
+        |                                    | Co Founded in  |
+        |                                    | Company Type   |
+        |                                    | Industry       |
+        |                                    | Sector         |
+        |                                    | Revenue Earned |
+        |                                    | Website        |
