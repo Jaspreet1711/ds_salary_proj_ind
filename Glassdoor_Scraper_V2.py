@@ -187,7 +187,8 @@ def gl_scrap():
     industry = []
     sector = []
     revenue = []
-    
+    website = []
+
     #Starts from Page-1 
     left_arrow.click()
     time.sleep(Secs)
@@ -335,6 +336,12 @@ def gl_scrap():
             industry.append("NA")
             sector.append("NA")
             revenue.append("NA")
+        try:
+            www = driver.find_element_by_css_selector("div[class='m-0 pt-sm pb']")
+            url = www.find_element_by_tag_name("a")
+            website.append(url.get_attribute('href'))
+        except:
+            website.append("NA")       
 
     page_num = 1    
 
@@ -492,6 +499,12 @@ def gl_scrap():
                 industry.append("NA")
                 sector.append("NA")
                 revenue.append("NA")
+            try:
+                www = driver.find_element_by_css_selector("div[class='m-0 pt-sm pb']")
+                url = www.find_element_by_tag_name("a")
+                website.append(url.get_attribute('href'))
+            except:
+                website.append("NA")    
             
 #####################################################################################################################################################
     
@@ -518,7 +531,8 @@ def gl_scrap():
     Company_Type = co_type 
     Industry = industry 
     Sector = sector 
-    Revenue_Earned = revenue 
+    Revenue_Earned = revenue
+    Website = website 
 
     Output_DF = pd.DataFrame(
     {'Company_Name': company_name,
@@ -527,13 +541,14 @@ def gl_scrap():
      'Salary': salary,
      'Company_Rating': company_rating,
      'Job_Post_Age': job_post_age,
-     'Data_Collected_on': time.strftime("%d-%m-%Y %H:%M", localtime()),
      'Company_Size': Company_Size,
      'Co_Founded_in': Co_Founded_in,
      'Company_Type': Company_Type,
      'Industry': Industry,
      'Sector': Sector,
      'Revenue_Earned': Revenue_Earned,
+     'Website': Website,
+     'Data_Collected_on': time.strftime("%d-%m-%Y %H:%M", localtime()),
      'Job_Description': Job_description
     })
     

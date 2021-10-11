@@ -28,4 +28,5 @@
                1. Job Title
                2. Location
                3. Number of Pages you want to scrape
-               4. Output File Name (Excel)
+               4. Full Page Upload Speed in Seconds
+               5. Output File Name (Excel)
