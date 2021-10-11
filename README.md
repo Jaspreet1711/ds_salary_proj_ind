@@ -4,6 +4,7 @@
 # Data Collection
   
   ### Data
+  
   I collected data using Webscraper from Glassdoor Website. I have extracted all the details of Data Science jobs from various cities and states across USA (Check folder "Data Collected USA"). I consolidated all the outputs into one Excel file mentioned below. 
         
   File Name -  DS Jobs in USA (Consolidated).xlsx
@@ -13,6 +14,7 @@
  --------------------------------------------------------------- 
  
   ### GLassdoor Webscraper
+  
   - I created this Web Scraper Glassdoor_Scraper_V2.py using Selenium Library in python to extract Data from Glassdoor Website about Jobs and Salary.
   - It collected the data and gave output in Excel Format.
   - Excel file will be downloaded in your system where you have saved Glassdoor_Scraper_V2.py
