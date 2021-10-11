@@ -38,5 +38,5 @@
       |                                    | Company Type   |
       |                                    | Industry       |
       |                                    | Sector         |
-      |                                     | Revenue Earned |
-      |                                     | Website        |
+      |                                    | Revenue Earned |
+      |                                    | Website        |
