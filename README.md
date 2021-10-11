@@ -17,7 +17,7 @@ Source - [Glassdoor Website](www.glassdoor.com)
   2. It collects the data and give output in Excel Format.
   3. Requirements to use Glassdoor_Scraper_V2:
        - Python Environment in your system (Anaconda)
-       - Python Libraries used are:
+       - Python Libraries used and need to be pip install are:
            -  selenium
            -  pandas 
            -  time
