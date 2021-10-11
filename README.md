@@ -7,7 +7,7 @@
   - It will collect data and will give output in Excel Format.
   - Excel file will be downloaded in your system where you have saved Glassdoor_Scraper_V2.py
   
-  ## Requirements to use Glassdoor_Scraper_V2:
+  ### Requirements to use Glassdoor_Scraper_V2:
   - Python Environment in your system (Anaconda)
   - Libraries used are - selenium, pandas & time
   - Chromedriver.exe should be installed in your system to use this code.
