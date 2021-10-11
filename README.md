@@ -24,8 +24,8 @@
                Github Username -  Jaspreet1711
                Email ID        -  singhjaspreet1711@outlook.com
         
-        | Input                              | Output         |     All of these are columns in Excel Output 
-        | :---                               |    :----:      |
+        | Input                              | Output         |     
+        | ---------------------------------- |--------------- |
         | Job Title                          | Company Name   | 
         | Location                           | Job Title      |
         | Number of Pages you want to scrape | City           |
