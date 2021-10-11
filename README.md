@@ -29,7 +29,8 @@
               Name            -  Jaspreet Singh
               Github Username -  Jaspreet1711
               Email ID        -  singhjaspreet1711@outlook.com
-  -----------------------------------------------------------------      
+  -----------------------------------------------------------------  
+  
       |              INPUTS                |     OUTPUTS    |     
       | :--------------------------------- |:-------------- |
       | Job Title                          | Company Name   | 
