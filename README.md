@@ -65,7 +65,9 @@ Source - [Glassdoor Website](https://www.glassdoor.com/Job/index.htm)
 
 #### Problems with Salary Column:
    -<b>Range</b>: Salary was given in range minimum to maximum.
+   
    -<b>Text</b>:  It also contains text like "K", Brackets etc.
+   
    -<b>Lacked uniformity</b>: Salaries are given in per annum and per month basis.     
 
 #### All of the problems were handled and I got 3 columns out of it:
