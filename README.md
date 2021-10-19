@@ -90,7 +90,7 @@ Using 3 column mentioned above I got this column.
 ### Cleaning Location Column
 <p>This column included City and State where job is available. I extracted Name of the State out of this by making the State_Name Column.</p>
         
-        
+#### Refer file "Data Cleaning Jobs Data.py" in the repository to check Data Cleaning Script.        
         
         
         
