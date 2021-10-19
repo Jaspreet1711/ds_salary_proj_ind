@@ -83,8 +83,10 @@ Using 3 column mentioned above I got this column.
     
     If Hourly is 1:
     Average_Salary = (((Min_Sal + Max_Sal) / 2) *40 * 52) / 1000  
-    
-
+                                                  ^    ^       ^
+                                             (Hours  (Total   (To get Output in thousands)                                               
+                                             in a    Weeks 
+                                             week)   in a Year)
 ### Cleaning Location Column
 <p>This column included City and State where job is available. I extracted Name of the State out of this by making the State_Name Column.</p>
         
