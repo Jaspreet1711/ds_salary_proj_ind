@@ -51,7 +51,7 @@ Source - [Glassdoor Website](https://www.glassdoor.com/Job/index.htm)
 
 ## Data Cleaning
 
-<p>Data we got using Scaper "DS Jobs in USA (Consolidated).xlsx" was cleaned. So, that we could analyse Salary offered in Data Science accross United States of America. Data mentioned in the Scraping output is not in numeric form and standardized (Like salaries ar mention in Per annum and Per hour bases under the Same Column).</p>
+<p>Data we got using Scaper "DS Jobs in USA (Consolidated).xlsx" was cleaned. So, that we could smoothly analyse Salary offered in Data Science accross United States of America. Data mentioned in the Scraping output is not in numeric form and standardized (Like salaries are mentioned in Per annum and Per hour bases under the Same Column).</p>
 
 
 ### Dropped Columns
@@ -61,7 +61,7 @@ Source - [Glassdoor Website](https://www.glassdoor.com/Job/index.htm)
         
         
 ### Cleaning Salary Column
-<p>Average_Salary in cleaned data is the final output after cleaning the Salary Column.</p> 
+<p>Average_Salary column in cleaned data is the final output after cleaning the Salary Column.</p> 
 
 #### Problems with Salary Column:
    -<b>Range</b>: Salary was given in range minimum to maximum.
@@ -71,8 +71,8 @@ Source - [Glassdoor Website](https://www.glassdoor.com/Job/index.htm)
    -<b>Lacked uniformity</b>: Salaries are given in per annum and per month basis.     
 
 #### All of the problems were handled and I got 3 columns out of it:
-   <li>1. <b>Min_Sal</b> - Minimum Salary in the range. *(in USD thousands)</li>
-   <li>2. <b>Max_Sal</b> - Maximum Salary in the range. *(in USD thousands)</li>
+   <li>1. <b>Min_Sal</b> - Minimum Salary in the range. (in USD thousands)</li>
+   <li>2. <b>Max_Sal</b> - Maximum Salary in the range. (in USD thousands)</li>
    <li>3. <b>Hourly</b> - If Salary was given in Hourly it will have 1 else 0.</li>
 
 #### Average_Salary Column *(in USD thousands)*
@@ -84,4 +84,12 @@ Using 3 column mentioned above I got this column.
     If Hourly is 1:
     Average_Salary = (((Min_Sal + Max_Sal) / 2) *40 * 52) / 1000  
     
-    
+
+### Cleaning Location Column
+<p>This column included City and State where job is available. I extracted Name of the State out of this by making the State_Name Column.</p>
+        
+        
+        
+        
+        
+        
