@@ -64,11 +64,9 @@ File Name - Salary_Data_Cleaned_USA.csv
 <p>Average_Salary column in cleaned data is the final output after cleaning the Salary Column.</p> 
 
 #### Problems with Salary Column:
-   -<b>Range</b>: Salary was given in range minimum to maximum.
-   
-   -<b>Text</b>:  It also contains text like "K", Brackets etc.
-   
-   -<b>Lacked uniformity</b>: Salaries are given in per annum and per month basis.     
+   - <b>Range</b>: Salary was given in range minimum to maximum.
+   - <b>Text</b>:  It also contains text like "K", Brackets etc.
+   - <b>Lacked uniformity</b>: Salaries are given in per annum and per month basis.     
 
 #### All of the problems were handled and I got 3 columns out of it:
    <li>1. <b>Min_Sal</b> - Minimum Salary in the range. (in USD thousands)</li>
