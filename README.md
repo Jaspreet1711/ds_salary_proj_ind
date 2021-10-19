@@ -50,3 +50,5 @@ Source - [Glassdoor Website](https://www.glassdoor.com/Job/index.htm)
 
 
 ## Data Cleaning
+
+<p>Data we got using Scaper () was cleaned. So, that we could analyse Salary offered in Data Science accross United States of America. 
