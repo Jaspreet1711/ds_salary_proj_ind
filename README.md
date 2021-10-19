@@ -53,7 +53,7 @@ Source - [Glassdoor Website](https://www.glassdoor.com/Job/index.htm)
 
 <p>Data we got using Scaper "DS Jobs in USA (Consolidated).xlsx" was cleaned. So, that we could analyse Salary offered in Data Science accross United States of America. Data mentioned in the Scraping output is not in numeric form and standardized (Like salaries ar mention in Per annum and Per hour bases under the Same Column).</p>
 
-#### Dropped Column
+#### Dropped Columns
 2 Columns were removed:
         <li>1. Unamed 0 - it is the indexing while getting the output in dataframe format using pandas in Web Scraping Code (Glassdoor_Scraper_V2.py). </li>
-        <li>2. Job_Description - We will not be doing any analyses on the basis of Job Description because i found Job Description of various jobs were empty or not giving full description as required by the companies. So, it didn't make any sense for me to analyse based on missing Description. For example "Python" in Programming Language Skill required for a Job was not mentioned in majourity of the Job Descriptions but there can be a possibility that Jobs with Empty or missing Job Description would have required Python programming language from the desired candidate.</li> 
+        <li>2. Job_Description -</li> <p>We will not be doing any analyses on the basis of Job Description because i found Job Description of various jobs were empty or not giving full description as required by the companies. So, it didn't make any sense for me to analyse based on missing Description. For example "Python" in Programming Language Skill required for a Job was not mentioned in majourity of the Job Descriptions but there can be a possibility that Jobs with Empty or missing Job Description would have required Python programming language from the desired candidate.</p> 
