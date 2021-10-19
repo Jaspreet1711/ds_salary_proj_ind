@@ -50,10 +50,36 @@ Source - [Glassdoor Website](https://www.glassdoor.com/Job/index.htm)
 
 
 ## Data Cleaning
-==================================================================================
+
 <p>Data we got using Scaper "DS Jobs in USA (Consolidated).xlsx" was cleaned. So, that we could analyse Salary offered in Data Science accross United States of America. Data mentioned in the Scraping output is not in numeric form and standardized (Like salaries ar mention in Per annum and Per hour bases under the Same Column).</p>
+
 
 ### Dropped Columns
 2 Columns were removed:
         <li>1. <b>Unamed 0</b> - it is the indexing while getting the output in dataframe format using pandas in Web Scraping Code (Glassdoor_Scraper_V2.py). </li>
         <li>2. <b>Job_Description</b> - We will not be doing any analyses on the basis of Job Description because i found Job Description of various jobs were empty or not giving full description as required by the companies. So, it didn't make any sense for me to analyse based on missing Description. For example "Python" in Programming Language Skill required for a Job was not mentioned in majourity of the Job Descriptions but there can be a possibility that Jobs with Empty or missing Job Description would have required Python programming language from the desired candidate.</li> 
+        
+        
+### Cleaning Salary Column
+<p>Average_Salary in cleaned data is the final output after cleaning the Salary Column.</p> 
+
+#### Problems with Salary Column:
+   -<b>Range</b>: Salary was given in range minimum to maximum.
+   -<b>Text</b>:  It also contains text like "K", Brackets etc.
+   -<b>Lacked uniformity</b>: Salaries are given in per annum and per month basis.     
+
+#### All of the problems were handled and I got 3 columns out of it:
+   <li>1. <b>Min_Sal</b> - Minimum Salary in the range.</li> (in thousands)
+   <li>2. <b>Max_Sal</b> - Maximum Salary in the range.</li> (in thousands)
+   <li>3. <b>Hourly</b> - If Salary was given in Hourly it will have 1 else 0.</li>
+
+#### Average_Salary Column
+Using 3 column mentioned above I got this column.
+    
+    If Hourly is 0:
+    Average_Salary = (Min_Sal + Max_Sal) / 2
+    
+    If Hourly is 1:
+    Average_Salary = (((Min_Sal + Max_Sal) / 2) *40 * 52) / 1000  
+    
+    
