@@ -24,7 +24,8 @@ print(" ")
 
 ## Removing 1st Column as it is of no use. 
 ds_df = ds_df.drop("Unnamed: 0", 1)
-print("Removing 1st Column as it is of no use.")
+ds_df = ds_df.drop("Job_Description", 1)
+print("Removing 1st Column and Job_Description as it is of no use.")
 print(ds_df.columns)
 print(" ")     
 print("Numbers of rows and columns are "+str(ds_df.shape))
@@ -143,4 +144,14 @@ statescodes_to_names = {"AL":"Alabama","AK":"Alaska","AZ":"Arizona","AR":"Arkans
       
 ds_df["State_Name"] = ds_df["State_Code"].replace(statescodes_to_names)
 
+print("Added State_Name Column for better analyses")
+print(" ")
 
+print("Final Data Shape is Rows by Columns: "+str(ds_df.shape))
+print(" ")
+
+# Downloading Cleaned data in csv format
+
+ds_df.to_csv("Salary_Data_Cleaned_USA.csv", index = False)
+
+print("Downloaded cleaned data set in your file named 'Salary_Data_Cleaned_USA.csv'")
