@@ -52,7 +52,8 @@ Source - [Glassdoor Website](https://www.glassdoor.com/Job/index.htm)
 ## Data Cleaning
 
 <p>Data we got using Scaper "DS Jobs in USA (Consolidated).xlsx" was cleaned. So, that we could smoothly analyse Salary offered in Data Science accross United States of America. Data mentioned in the Scraping output is not in numeric form and standardized (Like salaries are mentioned in Per annum and Per hour bases under the Same Column).</p>
-
+Output I got after cleaning is:
+File Name - Salary_Data_Cleaned_USA.csv
 
 ### Dropped Columns
 #### 2 Columns were removed:
@@ -92,6 +93,6 @@ Using 3 column mentioned above I got this column.
         
 #### Refer file "Data Cleaning Jobs Data.py" in the repository to check Data Cleaning Script.        
         
+----------------------------------------------------------------------------        
         
-        
-        
+## Exploratory Data Analysis        
