@@ -51,7 +51,6 @@ Source - [Glassdoor Website](https://www.glassdoor.com/Job/index.htm)
 
 ## Data Cleaning
 ==================================================================================
-
 <p>Data we got using Scaper "DS Jobs in USA (Consolidated).xlsx" was cleaned. So, that we could analyse Salary offered in Data Science accross United States of America. Data mentioned in the Scraping output is not in numeric form and standardized (Like salaries ar mention in Per annum and Per hour bases under the Same Column).</p>
 
 ### Dropped Columns
