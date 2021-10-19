@@ -71,11 +71,11 @@ def gl_scrap():
     
     # Calculating approx time for Scraping and collecting data in excel format
     minutes = str(round((((((Secs/1.5)*30)*Pgs) + (Secs*4))/60) + 3)) 
-    print(bcolors.WARNING + "It will take approximately "+minutes+" mins to scrape through 5 pages with all details into dataframe" )
+    print(bcolors.WARNING + "It will take approximately "+minutes+" mins to scrape through pages with all details into dataframe" )
     print(" ")
     print(" ")
     
-    #Scraping Starts after taking all the Inputs (Remember to change path below according to your system)
+    # Scraping Starts after taking all the Inputs (Remember to change path below according to your system)
     print(bcolors.OKGREEN + "Opening_the_Glassdoor_Website_in_ChromeBrowser")
     path = 'C:/Users/Jaspreet Singh/Desktop/DS_Projects/ds_sal_proj_backup/chromedriver.exe' # CHANGE THIS PATH 
     driver = webdriver.Chrome(path) # selecting the browser to be opened
@@ -121,7 +121,7 @@ def gl_scrap():
     print(" ")
     print(" ")
     
-    #Looking for Left and Right Arrow to Navigate through Pages.
+    # Looking for Left and Right Arrow to Navigate through Pages.
     print(bcolors.BOLD + "Finding_Page_Number_Change_Elements_on_WebPage")
     print(bcolors.OKGREEN + "It_Will_first_Let_Login-Pop-up_Trigger_and_Close_it_for_smooth_Scraping_ahead")
     
@@ -169,10 +169,10 @@ def gl_scrap():
 
 ########################################################################################################################################################
     
-    #Data Collection will start from Page 1
+    # Data Collection will start from Page 1
     print(bcolors.OKBLUE + "Now_Scraping_will_start_from_page-1_till_page-"+str(Pgs))    
     
-    #Variables to be collected of the job (Basically these are all columns in output Excel it will get)
+    # Variables to be collected of the job (Basically these are all columns in output Excel it will get)
     company_name = []
     designation = []
     city = []
@@ -189,7 +189,7 @@ def gl_scrap():
     revenue = []
     website = []
 
-    #Starts from Page-1 
+    # Starts from Page-1 
     left_arrow.click()
     time.sleep(Secs)
     print(" ")
@@ -289,14 +289,19 @@ def gl_scrap():
     except:
         print(bcolors.FAIL + "Failed_to_retrieve_Details_from_page-1")
     
-    #It will Start Clicking on each job to get data out of it.
+    # It will Start Clicking on each job to get data out of it.
     print(bcolors.OKCYAN + "Getting_JobDescription_on_page-1_Wait_for_Few_More_Seconds")
         
     for opening in jobs_list:
         opening.click()
         time.sleep(Secs/1.5)
         try:
-            jd.append(driver.find_element_by_css_selector("div[class='jobDescriptionContent desc']").text)
+            description = driver.find_element_by_css_selector("div[class='jobDescriptionContent desc']")
+            ds_text = description.text
+            lines = description.find_elements_by_tag_name("li")
+            for line in lines:
+                li_text = line.text
+            jd.append(ds_text + li_text)
         except:
             jd.append("NA")
         try:
@@ -342,6 +347,8 @@ def gl_scrap():
             website.append(url.get_attribute('href'))
         except:
             website.append("NA")       
+
+#-------------------------------------------------------------------------#
 
     page_num = 1    
 
@@ -452,7 +459,7 @@ def gl_scrap():
         except:
             print(bcolors.FAIL + "Failed_to_retrieve_Details_from_page-"+str(page_num))
     
-        #Will Start Clicking on each job to get data out of it.
+        # Will Start Clicking on each job to get data out of it.
         print(bcolors.OKCYAN + "Getting_JobDescription_on_page-"+str(page_num)+"_Wait_for_Few_More_Seconds")
         
         for opening in jobs_list:
