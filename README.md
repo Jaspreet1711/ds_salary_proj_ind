@@ -69,9 +69,9 @@ File Name - Salary_Data_Cleaned_USA.csv
    - <b>Lacked uniformity</b>: Salaries are given in per annum and per month basis.     
 
 #### All of the problems were handled and I got 3 columns out of it:
-   <li>1. <b>Min_Sal</b> - Minimum Salary in the range. (in USD thousands)</li>
-   <li>2. <b>Max_Sal</b> - Maximum Salary in the range. (in USD thousands)</li>
-   <li>3. <b>Hourly</b> - If Salary was given in Hourly it will have 1 else 0.</li>
+   1. <b>Min_Sal</b> - Minimum Salary in the range. (in USD thousands)
+   2. <b>Max_Sal</b> - Maximum Salary in the range. (in USD thousands)
+   3. <b>Hourly</b> - If Salary was given in Hourly it will have 1 else 0.
 
 #### Average_Salary Column *(in USD thousands)*
 Using 3 column mentioned above I got this column.
