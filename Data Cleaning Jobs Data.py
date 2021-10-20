@@ -150,8 +150,49 @@ print(" ")
 print("Final Data Shape is Rows by Columns: "+str(ds_df.shape))
 print(" ")
 
+# Making Technique Column
+
+def Techniques(r):
+    r = str(r)
+    if "machine" in r.lower() or "ml" in r.lower():
+        return "AI, Machine Learning"
+    elif "deep" in r.lower():
+        return "AI, ML, Deep Learning"
+    elif "nlp" in r.lower() or "natural" in r.lower() or "nlu" in r.lower():
+        return "AI, ML, DL, Natural Language Processing"
+    else:
+        return "AI"
+    
+ds_df['Technique_Focused'] = ds_df["Job Title"].apply(Techniques)
+
+# Making Senior or not Column
+    
+def Senior(r):
+    r = str(r)
+    if "senior" in r.lower() or "sr" in r.lower() or "lead" in r.lower():
+        return 1
+    else:
+        return 0
+    
+ds_df['Senior_in_Title_y/n'] = ds_df['Job Title'].apply(Senior)
+
+# Making Remote Column
+
+def Remote(r):
+    r = str(r)
+    if "remote" in r.lower():
+        return 1
+    else:
+        return 0
+
+ds_df['Remote_work_y/n'] = ds_df['Job Title'].apply(Remote)
+
 # Downloading Cleaned data in csv format
 
 ds_df.to_csv("Salary_Data_Cleaned_USA.csv", index = False)
 
 print("Downloaded cleaned data set in your file named 'Salary_Data_Cleaned_USA.csv'")
+
+
+
+   
